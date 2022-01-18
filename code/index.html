@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cipher Encryption</title>
+        <link rel="stylesheet" href="style.css" />
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div class="form" id="form">
+            <div class="title">Cipher Code Converter</div>
+            <div class="input-container ic1">
+                <input id="plain" class="input" type="text" placeholder=" " />
+                <div class="cut"></div>
+                <label for="plain" class="placeholder">Plain Text</label>
+            </div>
+            <button
+                type="text"
+                class="submit"
+                id="encrypt"
+                onclick="plain2cipher()"
+            >
+                Encipher &darr;
+            </button>
+            <button
+                type="text"
+                class="submit"
+                id="decrypt"
+                onclick="cipher2plain()"
+            >
+                Decipher &uarr;
+            </button>
+            <div class="input-container ic2">
+                <input id="cipher" class="input" type="text" placeholder=" " />
+                <div class="cut"></div>
+                <label for="cipher" class="placeholder">Cipher Text</label>
+            </div>
+            <button type="text" class="submit" id="reset" onclick="reset()">
+                Reset
+            </button>
+        </div>
+    </body>
+</html>
